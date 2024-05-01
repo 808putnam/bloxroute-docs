@@ -57,3 +57,4 @@
   * [Dockerfile](solana-trader-client-go-under-development/dockerfile.md)
   * [go.mod](solana-trader-client-go-under-development/go.mod.md)
   * [go.sum](solana-trader-client-go-under-development/go.sum.md)
+  * [Makefile](solana-trader-client-go-under-development/makefile.md)
