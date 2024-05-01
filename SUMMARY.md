@@ -36,6 +36,7 @@
       * [\_\_init\_\_.py](solana-trader-python/bxsolana/examples/\_\_init\_\_.py.md)
       * [constants.py](solana-trader-python/bxsolana/examples/constants.py.md)
       * [order\_lifecycle.py](solana-trader-python/bxsolana/examples/order\_lifecycle.py.md)
+      * [order\_utils.py](solana-trader-python/bxsolana/examples/order\_utils.py.md)
   * [Makefile](solana-trader-python/makefile.md)
   * [pyproject.toml](solana-trader-python/pyproject.toml.md)
   * [setup.cfg](solana-trader-python/setup.cfg.md)
