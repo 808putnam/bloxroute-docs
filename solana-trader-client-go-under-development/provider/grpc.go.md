@@ -1,12 +1,12 @@
 # grpc.go
 
-The file, `grpc.go`, is part of a client for interacting with a gRPC service. It defines a `GRPCClient` struct and methods for this struct to interact with a remote gRPC server.
+Pick up at line 115
 
-The `GRPCClient` struct has a field `apiClient` of type `pb.ApiClient` which is the client stub for the gRPC service. This stub is used to call the remote gRPC methods.
+The `grpc.go` file in the `provider` package defines a `GRPCClient` struct and methods for interacting with a remote gRPC server. Here's a brief overview of its contents:
 
-The file also defines several methods for the `GRPCClient` struct, each of which corresponds to a method in the gRPC service. These methods include `GetRecentBlockHash`, `GetPriorityFee`, `GetRateLimit`, `GetTransaction`, and others. Each of these methods takes a context and a request object, and returns a response object and an error.
-
-The file also includes methods for creating a new `GRPCClient` for different environments (Mainnet, Testnet, Devnet, Local) and with custom options.
-
-The `blxrCredentials` struct and its methods implement the `credentials.PerRPCCredentials` interface for providing custom authorization for the gRPC calls.
+1. `GRPCClient` struct: This struct has fields for the gRPC API client (`apiClient`), a Solana private key (`privateKey`), and a store for recent block hashes (`recentBlockHashStore`).
+2. `NewGRPCClient`, `NewGRPCTestnet`, `NewGRPCDevnet`, `NewGRPCLocal`: These functions create a new `GRPCClient` connected to the Mainnet, Testnet, Devnet, and local Trader API, respectively.
+3. `blxrCredentials` struct: This struct implements the `credentials.PerRPCCredentials` interface for providing custom authorization for the gRPC calls.
+4. `NewGRPCClientWithOpts`: This function creates a new `GRPCClient` with custom options. It sets up the transport credentials, per-RPC credentials, and other dial options, and then dials the gRPC server. It also starts a goroutine to cache the recent block hash if the `CacheBlockHash` option is set.
+5. `RecentBlockHash`: This method gets the recent block hash from the `recentBlockHashStore`.
 
