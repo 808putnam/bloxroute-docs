@@ -55,6 +55,7 @@
     * [config.yml](solana-trader-client-go-under-development/.circleci/config.yml.md)
   * [provider](solana-trader-client-go-under-development/provider/README.md)
     * [common.go](solana-trader-client-go-under-development/provider/common.go.md)
+    * [grpc.go](solana-trader-client-go-under-development/provider/grpc.go.md)
   * [build.sh](solana-trader-client-go-under-development/build.sh.md)
   * [Dockerfile](solana-trader-client-go-under-development/dockerfile.md)
   * [go.mod](solana-trader-client-go-under-development/go.mod.md)
