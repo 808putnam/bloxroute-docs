@@ -39,6 +39,7 @@
       * [order\_utils.py](solana-trader-python/bxsolana/examples/order\_utils.py.md)
       * [request\_utils.py](solana-trader-python/bxsolana/examples/request\_utils.py.md)
       * [stream\_utils.py](solana-trader-python/bxsolana/examples/stream\_utils.py.md)
+      * [transaction\_request\_utils.py](solana-trader-python/bxsolana/examples/transaction\_request\_utils.py.md)
   * [Makefile](solana-trader-python/makefile.md)
   * [pyproject.toml](solana-trader-python/pyproject.toml.md)
   * [setup.cfg](solana-trader-python/setup.cfg.md)
