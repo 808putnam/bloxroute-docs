@@ -29,6 +29,7 @@
     * [http.py](solana-trader-python/provider/http.py.md)
     * [jsonrpc\_patch.py](solana-trader-python/provider/jsonrpc\_patch.py.md)
     * [package\_info.py](solana-trader-python/provider/package\_info.py.md)
+    * [ws.py](solana-trader-python/provider/ws.py.md)
   * [transaction](solana-trader-python/transaction/README.md)
     * [\_\_init\_\_.py](solana-trader-python/transaction/\_\_init\_\_.py.md)
     * [memo.py](solana-trader-python/transaction/memo.py.md)
