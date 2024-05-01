@@ -58,3 +58,4 @@
   * [go.mod](solana-trader-client-go-under-development/go.mod.md)
   * [go.sum](solana-trader-client-go-under-development/go.sum.md)
   * [Makefile](solana-trader-client-go-under-development/makefile.md)
+  * [package\_info.go](solana-trader-client-go-under-development/package\_info.go.md)
