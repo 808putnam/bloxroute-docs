@@ -27,6 +27,7 @@
     * [grpc.py](solana-trader-python/provider/grpc.py.md)
     * [http\_error.py](solana-trader-python/provider/http\_error.py.md)
     * [http.py](solana-trader-python/provider/http.py.md)
+    * [jsonrpc\_patch.py](solana-trader-python/provider/jsonrpc\_patch.py.md)
   * [transaction](solana-trader-python/transaction/README.md)
     * [\_\_init\_\_.py](solana-trader-python/transaction/\_\_init\_\_.py.md)
     * [memo.py](solana-trader-python/transaction/memo.py.md)
