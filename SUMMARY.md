@@ -24,3 +24,4 @@
     * [\_\_init\_\_.py](solana-trader-python/transaction/\_\_init\_\_.py.md)
     * [memo.py](solana-trader-python/transaction/memo.py.md)
     * [private\_txs.py](solana-trader-python/transaction/private\_txs.py.md)
+    * [signing.py](solana-trader-python/transaction/signing.py.md)
