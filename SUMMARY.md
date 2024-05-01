@@ -24,6 +24,7 @@
     * [\_\_init\_\_.py](solana-trader-python/provider/\_\_init\_\_.py.md)
     * [base.py](solana-trader-python/provider/base.py.md)
     * [constants.py](solana-trader-python/provider/constants.py.md)
+    * [grpc.py](solana-trader-python/provider/grpc.py.md)
   * [transaction](solana-trader-python/transaction/README.md)
     * [\_\_init\_\_.py](solana-trader-python/transaction/\_\_init\_\_.py.md)
     * [memo.py](solana-trader-python/transaction/memo.py.md)
