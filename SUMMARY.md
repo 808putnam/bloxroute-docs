@@ -62,3 +62,6 @@
   * [go.sum](solana-trader-client-go/go.sum.md)
   * [Makefile](solana-trader-client-go/makefile.md)
   * [package\_info.go](solana-trader-client-go/package\_info.go.md)
+  * [examples](solana-trader-client-go/examples/README.md)
+    * [config](solana-trader-client-go/examples/config/README.md)
+      * [env.go](solana-trader-client-go/examples/config/env.go.md)
