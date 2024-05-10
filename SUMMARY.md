@@ -65,3 +65,5 @@
   * [examples](solana-trader-client-go/examples/README.md)
     * [config](solana-trader-client-go/examples/config/README.md)
       * [env.go](solana-trader-client-go/examples/config/env.go.md)
+    * [httpclient](solana-trader-client-go/examples/httpclient/README.md)
+      * [main.go](solana-trader-client-go/examples/httpclient/main.go.md)
