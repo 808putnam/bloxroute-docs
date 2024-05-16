@@ -73,6 +73,38 @@ We cancel the replaced order
 
 We the the recent blockhash
 
+## callTradeSwap
+
+We submit a trade swap on Raydium 0.01 USDC for wrapped SOL.
+
+## callRouteTradeSwap
+
+We submit a route trade swap with the first route step a swap of 0.01 Sol for USDC.
+
+## callRaydiumSwap
+
+We setup a swap on Raydium 0.01 USDC for wrapped SOL.
+
+## callJupiterSwap
+
+We setup a swap on Jupiter 0.01 USDC for wrapped SOL.
+
+## callJupiterSwapInstructions
+
+We setup a SubmitJupiterSwapInstructions 0.01 USDC for wrapped SOL.
+
+## callRaydiumSwapInstructions
+
+We setup a SubmitRaydiumSwapInstructions 0.01 USDC for wrapped SOL.
+
+## callRaydiumRouteSwap
+
+We call a route swap on Raydium 0.01 SOL for 0.0074 SOL
+
+## callJupiterRouteSwap
+
+We call a route swap on Jupiter with the first step 0.01 USDC for 0.00123425 SOL
+
 
 
 
