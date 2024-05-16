@@ -34,20 +34,21 @@ The rest of `main.go` file contains a series of functions that make HTTP calls t
 22. `callPlaceOrderHTTPWithPriorityFee`: This function is similar to `callPlaceOrderHTTP`, but it also includes a priority fee for the order.
 23. `callPlaceOrderBundleUsingBatch`: This function places an order with a bundle using a Raydium swap. It first posts a Raydium swap, then signs the transaction and submits it as a batch.
 24. `callPlaceOrderBundle`: This function places an order with a bundle using a Raydium swap. It first posts a Raydium swap, then signs the transaction and submits it.
-25. `callCancelByClientOrderIDHTTP`: This function cancels an order by its client ID after a delay of 60 seconds.
-26. `callPostSettleHTTP`: This function submits a settlement request for a specific market after a delay of 60 seconds.
-27. `cancelAll`: This function places two orders in the order book, checks if the orders are there, cancels all the orders, and then checks if all orders are cancelled. It also calls the `callPostSettleHTTP` function at the end.
-28. `callReplaceByClientOrderID`: This function replaces an order in the order book by its client ID. It first places an order, checks if the order is in the order book, replaces the order with a new one, checks if the new order is in the order book, and finally cancels all orders.
-29. `callReplaceOrder`: This function replaces an order in the order book. It first places an order, checks if the order is in the order book, replaces the order with a new one, checks if the new order is in the order book, and finally cancels all orders. The difference with the previous function is that this one uses the order ID to replace the order instead of the client ID.
-30. `callGetRecentBlockHash`: This function makes a request to get the recent block hash from the blockchain.
-31. `callTradeSwap`: This function submits a trade swap request. It logs the start of the test, creates a context with a timeout, and submits the trade swap request. If there's an error, it logs the error and returns true. If the request is successful, it logs the transaction signature and returns false.
-32. `callRaydiumSwap`: This function submits a Raydium swap request. It follows a similar pattern to `callTradeSwap`, but the request is specific to a Raydium swap.
-33. `callRaydiumRouteSwap`: This function submits a Raydium route swap request. It also follows a similar pattern, but the request is specific to a Raydium route swap.
-34. `callJupiterRouteSwap`: This function submits a Jupiter route swap request. It follows a similar pattern, but the request is specific to a Jupiter route swap.
-35. `callJupiterSwap`: This function submits a Jupiter swap request. It follows a similar pattern, but the request is specific to a Jupiter swap.
-36. `callJupiterSwapInstructions`: This function submits a Jupiter swap instructions request. It follows a similar pattern, but the request is specific to a Jupiter swap instructions.
-37. `callRouteTradeSwap`: This function submits a route trade swap request. It follows a similar pattern, but the request is specific to a route trade swap.
-38. `callGetPriorityFee`: This function gets the priority fee. It creates a context with a timeout, makes the request, and logs the priority fee or any error that occurs.
+25.
+26. `callCancelByClientOrderIDHTTP`: This function cancels an order by its client ID after a delay of 60 seconds.
+27. `callPostSettleHTTP`: This function submits a settlement request for a specific market after a delay of 60 seconds.
+28. `cancelAll`: This function places two orders in the order book, checks if the orders are there, cancels all the orders, and then checks if all orders are cancelled. It also calls the `callPostSettleHTTP` function at the end.
+29. `callReplaceByClientOrderID`: This function replaces an order in the order book by its client ID. It first places an order, checks if the order is in the order book, replaces the order with a new one, checks if the new order is in the order book, and finally cancels all orders.
+30. `callReplaceOrder`: This function replaces an order in the order book. It first places an order, checks if the order is in the order book, replaces the order with a new one, checks if the new order is in the order book, and finally cancels all orders. The difference with the previous function is that this one uses the order ID to replace the order instead of the client ID.
+31. `callGetRecentBlockHash`: This function makes a request to get the recent block hash from the blockchain.
+32. `callTradeSwap`: This function submits a trade swap request. It logs the start of the test, creates a context with a timeout, and submits the trade swap request. If there's an error, it logs the error and returns true. If the request is successful, it logs the transaction signature and returns false.
+33. `callRaydiumSwap`: This function submits a Raydium swap request. It follows a similar pattern to `callTradeSwap`, but the request is specific to a Raydium swap.
+34. `callRaydiumRouteSwap`: This function submits a Raydium route swap request. It also follows a similar pattern, but the request is specific to a Raydium route swap.
+35. `callJupiterRouteSwap`: This function submits a Jupiter route swap request. It follows a similar pattern, but the request is specific to a Jupiter route swap.
+36. `callJupiterSwap`: This function submits a Jupiter swap request. It follows a similar pattern, but the request is specific to a Jupiter swap.
+37. `callJupiterSwapInstructions`: This function submits a Jupiter swap instructions request. It follows a similar pattern, but the request is specific to a Jupiter swap instructions.
+38. `callRouteTradeSwap`: This function submits a route trade swap request. It follows a similar pattern, but the request is specific to a route trade swap.
+39. `callGetPriorityFee`: This function gets the priority fee. It creates a context with a timeout, makes the request, and logs the priority fee or any error that occurs.
 
 
 
