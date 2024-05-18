@@ -31,4 +31,34 @@ Here's a brief overview of what the main parts of the file do:
 25. `callGetJupiterQuotes`: This function fetches quote data for a specific token pair from the Jupiter project on the blockchain and logs the received data or any errors that occur.
 26. `callOrderbookWSStream`: This function starts a stream of orderbook data for a specific market from the blockchain and logs the received data or any errors that occur.
 27. `callMarketDepthWSStream`: This function starts a stream of market depth data for a specific market from the blockchain and logs the received data or any errors that occur.
+28. `callTradesWSStream`: This function starts a stream of trade data for the "SOL/USDC" market from the blockchain and logs the received data or any errors that occur.
+29. `callGetNewRaydiumPoolsStream`: This function starts a stream of new pool data from the Raydium project on the blockchain and logs the received data or any errors that occur.
+30. `callRecentBlockHashWSStream`: This function starts a stream of recent block hash data from the blockchain and logs the received data or any errors that occur.
+31. `callPoolReservesWSStream`: This function starts a stream of pool reserve data for specific Raydium pools from the blockchain and logs the received data or any errors that occur.
+32. `orderLifecycleTest`: This function tests the lifecycle of an order by placing an order, checking its status, cancelling it, and then checking its status again. It logs the results of each step or any errors that occur.
+33. `callPlaceOrderWS`: This function places an order on the blockchain and logs the result or any errors that occur.
+34. `callPlaceOrderBundle`: This function places an order on the blockchain using the Raydium Swap protocol. It specifies the owner address, the tokens to swap ("USDC" to "SOL"), the slippage, and the amount to swap. It then signs and submits the transaction, logging the signature or any errors that occur.
+35. `callPlaceOrderBundleWithBatch`: This function is similar to `callPlaceOrderBundle`, but it uses a different slippage and submits the transaction as a batch.
+36. `callCancelByClientOrderIDWS`: This function cancels an order on the blockchain using the client order ID. It logs the client order ID or any errors that occur.
+37. `callPostSettleWS`: This function settles an order on the blockchain. It logs the signature of the transaction or any errors that occur.
+38. `cancelAll`: This function places two orders on the blockchain, checks that they are in the order book, cancels them, and then checks that they are no longer in the order book. It logs the signatures of the transactions and any errors that occur.
+39. `callReplaceByClientOrderID`: This function replaces an existing order on the blockchain using the client order ID. It first places an order, checks that it is in the order book, replaces it with a new order at half the original price, checks that the new order is in the order book, and then cancels all orders. It logs the signatures of the transactions and any errors that occur.
+40. `callReplaceOrder`: This function is similar to `callReplaceByClientOrderID`, but it uses a different method to replace the order. Instead of using the client order ID, it uses the order ID. It first places an order, checks that it is in the order book, replaces it with a new order at half the original price using the order ID, checks that the new order is in the order book, and then cancels all orders. It logs the signatures of the transactions and any errors that occur.
+41. `callTradeSwap`: This function submits a trade swap request to the blockchain, logs the transaction signature, and returns a boolean indicating whether an error occurred.
+42. `callTradeSwapWithPriorityFee`: Similar to `callTradeSwap`, but it also includes a compute limit and compute price in the request.
+43. `callRaydiumSwap`: This function submits a Raydium swap request to the blockchain, logs the transaction signature, and returns a boolean indicating whether an error occurred.
+44. `callRouteTradeSwap`: This function submits a route trade swap request to the blockchain, logs the transaction signature, and returns a boolean indicating whether an error occurred.
+45. `callRaydiumRouteSwap`: This function submits a Raydium route swap request to the blockchain, logs the transaction signature, and returns a boolean indicating whether an error occurred.
+46. `callJupiterSwap`: This function submits a Jupiter swap request to the blockchain, logs the transaction signature, and returns a boolean indicating whether an error occurred.
+47. `callJupiterSwapInstructions`: This function submits a Jupiter swap instructions request to the blockchain, logs the transaction signature, and returns a boolean indicating whether an error occurred.
+48. `callRaydiumSwapInstructions`: This function submits a Raydium swap instructions request to the blockchain, logs the transaction signature, and returns a boolean indicating whether an error occurred.
+49. `callJupiterRouteSwap`: This function submits a Jupiter route swap request to the blockchain, logs the transaction signature, and returns a boolean indicating whether an error occurred.
+50. `callPricesWSStream`: This function starts a stream of price data from the blockchain, logs each response received, and returns a boolean indicating whether an error occurred.
+51. `callGetTickersWSStream`: This function starts a stream of ticker data from the blockchain, logs each response received, and returns a boolean indicating whether an error occurred.
+52. `callSwapsWSStream`: This function starts a stream of swap data from the blockchain, logs each response received, and returns a boolean indicating whether an error occurred.
+53. `callBlockWSStream`: This function starts a stream of block data from the blockchain, logs each response received, and returns a boolean indicating whether an error occurred.
+54. `callGetPriorityFeeWSStream`: This function starts a stream of priority fee data from the blockchain, logs each response received, and returns a boolean indicating whether an error occurred.
+55. `callGetPriorityFeeWS`: This function fetches the priority fee from the blockchain, logs the fee, and returns a boolean indicating whether an error occurred.
+56. `callGetBundleTipWSStream`: This function starts a stream of bundle tip data from the blockchain, logs each response received, and returns a boolean indicating whether an error occurred.
 
+\
