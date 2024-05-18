@@ -4,6 +4,5 @@ Note, there is a .gitsubmodule file in the root folder. Use the the following co
 
 ```bash
 git submodule init
-it submodule update --recursive --depth 1
+it submodule update 
 ```
-
