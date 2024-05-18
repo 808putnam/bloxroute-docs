@@ -25,6 +25,8 @@
       * [common.go](solana-trader-client-go/reference/provider/common.go.md)
       * [grpc.go](solana-trader-client-go/reference/provider/grpc.go.md)
       * [http.go](solana-trader-client-go/reference/provider/http.go.md)
+      * [recent\_hash\_store.go](solana-trader-client-go/reference/provider/recent\_hash\_store.go.md)
+      * [ws.go](solana-trader-client-go/reference/provider/ws.go.md)
     * [transaction](solana-trader-client-go/reference/transaction/README.md)
       * [create.go](solana-trader-client-go/reference/transaction/create.go.md)
       * [memo\_test.go](solana-trader-client-go/reference/transaction/memo\_test.go.md)
