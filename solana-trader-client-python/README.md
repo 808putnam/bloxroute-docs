@@ -1,10 +1,10 @@
-# solana-trader-python
+# solana-trader-client-python
 
 Note, there is a .gitsubmodule file in the root folder. However the following commands do not appear to do anything:
 
 ```bash
 git submodule init
-it submodule update --recursive --depth 1
+it submodule update
 ```
 
 ## nautilus\_trader modifications
