@@ -68,6 +68,8 @@
       * [wallet impact details](solana-trader-client-go/examples/httpclient/wallet-impact-details.md)
     * [grpcclient](solana-trader-client-go/examples/grpcclient/README.md)
       * [main.go](solana-trader-client-go/examples/grpcclient/main.go.md)
+    * [wsclient](solana-trader-client-go/examples/wsclient/README.md)
+      * [main.go](solana-trader-client-go/examples/wsclient/main.go.md)
   * [provider](solana-trader-client-go/provider/README.md)
     * [common.go](solana-trader-client-go/provider/common.go.md)
     * [grpc.go](solana-trader-client-go/provider/grpc.go.md)
