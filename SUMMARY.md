@@ -24,6 +24,7 @@
     * [provider](solana-trader-client-go/reference/provider/README.md)
       * [common.go](solana-trader-client-go/reference/provider/common.go.md)
       * [grpc.go](solana-trader-client-go/reference/provider/grpc.go.md)
+      * [http.go](solana-trader-client-go/reference/provider/http.go.md)
     * [transaction](solana-trader-client-go/reference/transaction/README.md)
       * [create.go](solana-trader-client-go/reference/transaction/create.go.md)
       * [memo\_test.go](solana-trader-client-go/reference/transaction/memo\_test.go.md)
