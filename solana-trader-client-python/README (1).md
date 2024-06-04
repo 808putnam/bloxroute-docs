@@ -1,5 +1,7 @@
 # solana-trader-client-python
 
+1Password has the id/password for PyPi publishing. Note that you need to use token based authentication - not user id/password. User is something like \_\_\<token>\_\_ and password is \<token>.
+
 Note, there is a .gitsubmodule file in the root folder. However the following commands do not appear to do anything:
 
 ```bash
