@@ -1,8 +1,12 @@
 # solana-trader-client-python
 
-Setup Steps:
+You need to install build module to run python3 -m build commands.
 
+```python
+python3 -m pip install build
+```
 
+## Setup Steps
 
 ```
 # start in solana-trader-client-python

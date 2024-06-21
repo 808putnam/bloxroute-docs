@@ -7,6 +7,12 @@ git submodule init
 it submodule update 
 ```
 
+You need to install build module to run python3 -m build commands.
+
+```python
+python3 -m pip install build
+```
+
 ## How to point go sdk and trader api to new instances of solana-trader-proto
 
 * If the changes are still local and you have not committed, you can use the replace command in the appropriate go.mod (go sdk or trader api) to point to the folder location that holds the go.mod for solana-trader.proto.
