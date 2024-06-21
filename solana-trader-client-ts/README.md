@@ -33,7 +33,22 @@ npm run proto
 
 Install goland node.js plugin.
 
-Setup a debug run for typescript from node.
+Setup a debug run for typescript from node. You can use the package.json start script as s reference.
+
+Example debug setup for GoLand.
+
+```xml
+<component name="ProjectRunConfigurationManager">
+<configuration default="false" name="client-ts-default" type="NodeJSConfigurationType" node-parameters="--experimental-specifier-resolution=node --loader ts-node/esm " path-to-js-file="examples/index.ts" working-dir="$PROJECT_DIR$">
+<envs>
+<env name="API_ENV" value="local"/>
+<env name="RUN_LIFECYCLE" value="true"/>
+<env name="RUN_STREAMS" value="true"/>
+</envs>
+<method v="2"/>
+</configuration>
+</component>
+```
 
 TODO: Add example here.
 
