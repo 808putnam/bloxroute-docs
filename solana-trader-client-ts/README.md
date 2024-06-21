@@ -30,3 +30,19 @@ npm run proto
 # package.json
 "proto": "pb-gen-ts --entry-path ./solana-trader-proto/proto --out-dir=./bxsolana/proto ./solana-trader-proto/proto/api.proto --ext-in-import=' '"
 ```
+
+Install goland node.js plugin.
+
+Setup a debug run for typescript from node.
+
+TODO: Add example here.
+
+Add environment variable to debug setup for API\_ENV set to local.
+
+Optional environment variables: RUN\_LIFECYCLE, RUN\_STREAMS.
+
+AUTH\_HEADER, PRIVATE\_KEY and PUBLIC\_KEY environment variables should be setup already from system environment variables.
+
+References
+
+1. [https://www.jetbrains.com/help/go/running-and-debugging-typescript.html#before\_you\_start](https://www.jetbrains.com/help/go/running-and-debugging-typescript.html#before\_you\_start)
