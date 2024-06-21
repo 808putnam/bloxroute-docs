@@ -19,3 +19,12 @@ If you want to work on specific branch of solana-trader-proto:
 
 1. [https://gist.github.com/gitaarik/8735255?permalink\_comment\_id=3130112#update-the-submodule-pointer-to-a-different-commit](https://gist.github.com/gitaarik/8735255?permalink\_comment\_id=3130112#update-the-submodule-pointer-to-a-different-commit)
 2. [https://stackoverflow.com/questions/1777854/how-can-i-specify-a-branch-tag-when-adding-a-git-submodule](https://stackoverflow.com/questions/1777854/how-can-i-specify-a-branch-tag-when-adding-a-git-submodule)
+
+`pbkit/pbkit` is used for proto builds. You can see how this works by examining package.json
+
+```
+npm run proto
+
+# package.json
+"proto": "pb-gen-ts --entry-path ./solana-trader-proto/proto --out-dir=./bxsolana/proto ./solana-trader-proto/proto/api.proto --ext-in-import=' '"
+```
