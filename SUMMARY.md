@@ -79,7 +79,7 @@
     * [pyproject.toml](solana-trader-client-python/pyproject.toml.md)
     * [setup.cfg](solana-trader-client-python/setup.cfg.md)
 * [solana-trader-client-ts](solana-trader-client-ts/README.md)
-  * [reference](solana-trader-client-ts/reference.md)
+  * [ai reference](solana-trader-client-ts/ai-reference.md)
 * [solana-trader-proto](<README (1).md>)
   * [reference](solana-trader-proto/reference/README.md)
     * [proto](solana-trader-proto/reference/proto/README.md)
