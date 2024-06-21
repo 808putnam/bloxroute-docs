@@ -1,6 +1,6 @@
 # solana-trader-client-python
 
-You need to install build module to run python3 -m build commands.
+You need to install build module to run `python3 -m build` commands.
 
 ```python
 python3 -m pip install build
