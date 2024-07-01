@@ -4,7 +4,7 @@ Note, there is a .gitsubmodule file in the root folder. Use the the following co
 
 ```bash
 git submodule init
-it submodule update 
+git submodule update 
 ```
 
 You need to install build module to run `python3 -m build` commands.

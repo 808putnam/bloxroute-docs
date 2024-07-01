@@ -13,14 +13,19 @@ source ./.venv/bin/activate
 python3 -m pip install --upgrade build
 python3 -m pip install --upgrade twine
 
-# Assumes we have solana-trader-proto as sibling folder
-cd ../solana-trader-proto/python
+# Assumes we have solana-trader-proto as sibling folder.
+# Update submodule for solana-trader-proto
+cd ../solana-trader-proto
+git submodule init
+git submodule update
 
 # IMPORTANT: Not shown - upgrade 'version' field in 
 #            solana-trader-proto/pthon/ppyproject.toml
 
 # Install solana-trader-proto requirements into 
-# solana-trader-client-python's venv
+# solana-trader-client-python's venv. This will install the
+# proto builder for python library.
+cd python
 pip3 install -r requirements.txt --no-cache
 
 # Output our proto files for python 
@@ -46,13 +51,16 @@ pip3 install -r requirements.txt
 
 ## Publishing
 
-1Password has the id/password for PyPi publishing. Note that you need to use token based authentication - not user id/password.&#x20;
+1Password has the token for PyPi publishing. Note that you need to use token based authentication - not user id/password.&#x20;
 
 These steps assume:
 
-1. You are in develop branch with all changes merged in.
-2. The solana-trader-proto version you refernce in setup.cfg has been published to PyPI.
-3. The setup.cfg version field has been updated to the new version for the solana-trader-client-python library you are publishing.
+1. You are in develop branch for both solana-trader-proto and solana-trader-python with all changes merged in.
+2. The pyproject.toml version field for solana-trader-proto has been udpated to the new version for the solana-trader-proto library.
+3. The solana-trader-proto version you refernce in setup.cfg has been published to PyPI.
+4. The setup.cfg version field has been updated to the new version for the solana-trader-client-python library you are publishing.
+
+For publishing, you will be prompted for a username and password. For the username, use `__token__`. For the password, use the token value from 1Password, including the `pypi-` prefix.
 
 ```
 # Start in solana-trader-client-python and create a
@@ -66,16 +74,38 @@ python3 -m pip install --upgrade build
 python3 -m pip install --upgrade twine
 pip3 install -r requirements.txt
 
+# Assumes we have solana-trader-proto as sibling folder.
+# Update submodule for solana-trader-proto
+cd ../solana-trader-proto
+git submodule init
+git submodule update
+
+# Install solana-trader-proto requirements into 
+# solana-trader-client-python's venv. This will install the
+# proto builder for python library.
+cd python
+pip3 install -r requirements.txt --no-cache
+
+# Output our proto files for python 
+cd ..
+make proto
+
+# Build a local version of solana-trader-proto
+cd python
+rm -rf dist/ && python3 -m build
+
+# Publish local version of solana-trader-proto to pypi
+python3 -m twine upload --repository pypi dist/*
+
 # Build a local version of solana-trader-client-python
+cd ../../solana-trader-client-python
 rm -rf dist/ && python3 -m build
 
 # Publish local version of solana-trader-client-python to pypi
 python3 -m twine upload --repository pypi dist/*
 ```
 
-You will be prompted for a username and password. For the username, use `__token__`. For the password, use the token value from 1Password, including the `pypi-` prefix.
-
-After the command completes, you should see output similar to this:
+After the publishing commands complete, you should see output similar to this:
 
 ```
 Uploading distributions to https://pypi.org/legacy/
@@ -88,7 +118,7 @@ Uploading example_package_YOUR_USERNAME_HERE-0.0.1.tar.gz
 
 Once uploaded, your package should be viewable on PyPI. For example:&#x20;
 
-`https://pypi.org/project/example_package_YOUR_USERNAME_HERE`.
+`https://pypi.org/project/example_package_YOUR_USERNAME_HERE`
 
 ## Additional Notes
 
