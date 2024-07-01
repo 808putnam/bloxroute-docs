@@ -21,7 +21,7 @@ make proto
 
 cd python
 rm -rf dist/ && python3 -m build
-python3 -m twine upload --repository pypi dist/*
+python3 -m twine upload --repository pypi -u __token__ -p pypi-AgEIcHlwaS5vcmcCJDUwNmVlNTMyLTM3NWQtNGE5MS1hMWQyLTFiZGEzMmM5ZTM3OAACKlszLCIwNDg3NTQwZS1mNTMyLTQxNmMtYmM0Ni02ZjY2NTk4OWUyMDYiXQAABiA_B5srlA6yGWg1CVpkEYUa3WlyAAWcxWrTixMvE1uIfQ --verbose dist/*
 
 ```
 
