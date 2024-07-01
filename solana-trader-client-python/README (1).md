@@ -2,8 +2,7 @@
 
 ## Local development
 
-```
-# Start in solana-trader-client-python and create a
+<pre><code># Start in solana-trader-client-python and create a
 # virtual environment for solana-trader-client-python
 python3 -m venv .venv
 source ./.venv/bin/activate
@@ -34,12 +33,12 @@ make proto
 
 # Build a local version of solana-trader-proto
 cd python
-rm -rf dist/ && python3 -m build
+rm -rf dist/ &#x26;&#x26; python3 -m build
 
 # Install the the local build of solana-trader-proto into
 # solana-trader-client-python's venv
-pip3 install dist/bxsolana_trader_proto-0.0.70.tar.gz
-
+<strong>pip3 install dist/bxsolana_trader_proto-0.0.70.tar.gz
+</strong>
 # IMPORTANT: Not shown - update version for the depdendency for 
 #            bxsolana-trader-proto in solana-trader-client-python/setup.cfg.
 
@@ -47,7 +46,7 @@ pip3 install dist/bxsolana_trader_proto-0.0.70.tar.gz
 # solana-trader-client-python's venv.
 cd ../../solana-trader-client-python
 pip3 install -r requirements.txt
-```
+</code></pre>
 
 ## Publishing
 

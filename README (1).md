@@ -1,5 +1,30 @@
 # solana-trader-proto
 
+
+
+```
+# assumes you are in root of solana-trader-proto
+git submodule init
+git submodule update
+cd python
+
+# note, .gitignore needs to be udpated to exclude .venv folder
+python3 -m venv .venv
+source ./.venv/bin/activate
+python3 -m pip install --upgrade build
+python3 -m pip install --upgrade twine
+pip3 install -r requirements.txt --no-cache
+
+# you should not receive that error message about optional fields now
+cd ..
+make proto
+
+cd python
+rm -rf dist/ && python3 -m build
+python3 -m twine upload --repository pypi dist/*
+
+```
+
 Note, there is a .gitsubmodule file in the root folder. Use the the following commands to pull in the mev-protos submodule:
 
 ```bash
